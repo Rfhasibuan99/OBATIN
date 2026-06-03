@@ -16,5 +16,10 @@ namespace OBATIN.view
         {
             InitializeComponent();
         }
+
+        private void FormRiwayat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

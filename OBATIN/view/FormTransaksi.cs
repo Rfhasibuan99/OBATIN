@@ -16,5 +16,10 @@ namespace OBATIN.view
         {
             InitializeComponent();
         }
+
+        private void FormTransaksi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

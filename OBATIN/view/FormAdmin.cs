@@ -26,5 +26,10 @@ namespace OBATIN.view
         {
 
         }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

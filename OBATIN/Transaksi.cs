@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OBATIN.view
+namespace OBATIN
 {
-    public partial class FormStokObat : Form
+    public partial class Transaksi : Form
     {
-        public FormStokObat()
+        public Transaksi()
         {
             InitializeComponent();
         }
 
-        private void FormStokObat_Load(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
