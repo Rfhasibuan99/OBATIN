@@ -34,6 +34,16 @@ namespace OBATIN.view
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void transaksi_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transaksi_panel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 

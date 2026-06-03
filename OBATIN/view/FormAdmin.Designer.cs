@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.logout_btn = new System.Windows.Forms.Button();
-            this.menuuser_btn = new System.Windows.Forms.Button();
             this.riwayat_btn = new System.Windows.Forms.Button();
             this.kelolastok_btn = new System.Windows.Forms.Button();
             this.transaksi_btn = new System.Windows.Forms.Button();
@@ -57,7 +56,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
             this.panel1.Controls.Add(this.logout_btn);
-            this.panel1.Controls.Add(this.menuuser_btn);
             this.panel1.Controls.Add(this.riwayat_btn);
             this.panel1.Controls.Add(this.kelolastok_btn);
             this.panel1.Controls.Add(this.transaksi_btn);
@@ -83,23 +81,11 @@
             this.logout_btn.Text = "Logout";
             this.logout_btn.UseVisualStyleBackColor = false;
             // 
-            // menuuser_btn
-            // 
-            this.menuuser_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuuser_btn.ForeColor = System.Drawing.Color.Black;
-            this.menuuser_btn.Location = new System.Drawing.Point(10, 278);
-            this.menuuser_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.menuuser_btn.Name = "menuuser_btn";
-            this.menuuser_btn.Size = new System.Drawing.Size(127, 29);
-            this.menuuser_btn.TabIndex = 5;
-            this.menuuser_btn.Text = "Menu User";
-            this.menuuser_btn.UseVisualStyleBackColor = true;
-            // 
             // riwayat_btn
             // 
             this.riwayat_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.riwayat_btn.ForeColor = System.Drawing.Color.Black;
-            this.riwayat_btn.Location = new System.Drawing.Point(10, 227);
+            this.riwayat_btn.Location = new System.Drawing.Point(10, 273);
             this.riwayat_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.riwayat_btn.Name = "riwayat_btn";
             this.riwayat_btn.Size = new System.Drawing.Size(127, 29);
@@ -111,7 +97,7 @@
             // 
             this.kelolastok_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kelolastok_btn.ForeColor = System.Drawing.Color.Black;
-            this.kelolastok_btn.Location = new System.Drawing.Point(10, 178);
+            this.kelolastok_btn.Location = new System.Drawing.Point(10, 216);
             this.kelolastok_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kelolastok_btn.Name = "kelolastok_btn";
             this.kelolastok_btn.Size = new System.Drawing.Size(127, 29);
@@ -123,19 +109,20 @@
             // 
             this.transaksi_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transaksi_btn.ForeColor = System.Drawing.Color.Black;
-            this.transaksi_btn.Location = new System.Drawing.Point(10, 129);
+            this.transaksi_btn.Location = new System.Drawing.Point(10, 160);
             this.transaksi_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transaksi_btn.Name = "transaksi_btn";
             this.transaksi_btn.Size = new System.Drawing.Size(127, 29);
             this.transaksi_btn.TabIndex = 2;
             this.transaksi_btn.Text = "Transaksi Baru";
             this.transaksi_btn.UseVisualStyleBackColor = true;
+            this.transaksi_btn.Click += new System.EventHandler(this.transaksi_btn_Click);
             // 
             // dashboard_btn
             // 
             this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboard_btn.ForeColor = System.Drawing.Color.Black;
-            this.dashboard_btn.Location = new System.Drawing.Point(10, 80);
+            this.dashboard_btn.Location = new System.Drawing.Point(10, 102);
             this.dashboard_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboard_btn.Name = "dashboard_btn";
             this.dashboard_btn.Size = new System.Drawing.Size(127, 29);
@@ -199,6 +186,7 @@
             this.transaksi_panel.Name = "transaksi_panel";
             this.transaksi_panel.Size = new System.Drawing.Size(104, 83);
             this.transaksi_panel.TabIndex = 2;
+            this.transaksi_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.transaksi_panel_Paint);
             // 
             // transaksi_lbl
             // 
@@ -294,7 +282,6 @@
         private System.Windows.Forms.Button dashboard_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button logout_btn;
-        private System.Windows.Forms.Button menuuser_btn;
         private System.Windows.Forms.Button riwayat_btn;
         private System.Windows.Forms.Button kelolastok_btn;
         private System.Windows.Forms.Button transaksi_btn;
