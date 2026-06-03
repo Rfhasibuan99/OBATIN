@@ -83,9 +83,10 @@ namespace OBATIN.view
 
                     MessageBox.Show($"Login Berhasil! Selamat datang, Anda masuk sebagai {loggedInUser.Role}.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // 6. Pindah ke halaman utama FormAdmin
-                    FormAdmin adminPage = new FormAdmin();
-                    adminPage.Show();
+                    // 6. Pindah langsung ke FormTransaksi
+                    FormTransaksi transaksiPage = new FormTransaksi(loggedInUser.Username);
+                    transaksiPage.FormClosed += (s, args) => this.Close();
+                    transaksiPage.Show();
 
                     this.Hide(); // Sembunyikan form login
                 }
